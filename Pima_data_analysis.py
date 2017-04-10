@@ -23,7 +23,7 @@ nb_model = GaussianNB()
 nb_model.fit(X_train, y_train.ravel())
 
 nb_predict_train = nb_model.predict(X_train)
-if(metrics.accuracy_score(y_train, nb_predict_train) > 0.8):
+if(metrics.accuracy_score(y_train, nb_predict_train) > 0.7):
     print "Good data set\n On Test data Accuracy ="
 
 nb_predict_test = nb_model.predict(X_test)
